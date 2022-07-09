@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagindas Nagindas-Khandwala-College-of-Commerce-Arts-and-Management-Studies-Mumbai</title>
+</head>
+<style>
+    /* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+/* CSS Variables */
+:root{
+    --navbar--height: 59px;
+}
+ 
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.4;
+}
+
+
+/*Navigation Bar: Logo and Image */
+#logo{
+    margin: 4px 12px;
+}
+#logo img{
+    height: 40px;
+    margin: 4px 12px;
+}
+
+/*Navigation Bar: List Styling */
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: blueviolet;
+    background-color: white;
+}
+
+/* FAQ Section */
+#faq{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 280px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#faq::before{
+    content: "";
+    background-color: #073d5f;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#faq h1{
+    color: white;
+    text-align: start;
+}
+
+#faq p{
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: 'Gentium Book Plus', serif;
+}
+/* Utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 0px;
+    font-family: 'Gentium Book Plus', serif;
+    text-align: left;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    opacity: 88%;
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+/* For Question mark image */
+.picleft{
+    float: left;
+    margin-right: 983px;
+    margin-left: 20px;
+    margin-top: -250px;
+}
+
+
+
+
+</style>
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://www.careerindia.com/college-logo/128x128/29/Nagindas-Khandwala-College-of-Commerce-Arts-and-Management-Studies-Mumbai.jpg" alt="Sorry! Image Not Rendered">   <!-- Add the image link to the code which you have used earlier-->
+        </div>
+        
+        <ul>
+            <li class="item"><a href="#">Home</a></li>           <!-- Add a link to Home Page-->    
+            <li class="item"><a href="about.html">About Us</a></li>       <!-- Add a link to About us Page-->
+            <li class="item"><a href="#">Contact Us</a></li>                <!-- You can Add any other pages button and link-->
+            <!-- <li class="item"><a href="#"></a></li>     -->          <!-- You can Add any other pages button and link-->
+            <!-- <li class="item"><a href="#"></a></li>      -->         <!-- You can Add any other pages button and link-->
+        </ul>
+    </nav> 
+    <section id="faq">
+        <h1 class="h-primary"></h1>
+        <!-- <h1>About Us</h1> -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+            Voluptatum saepe ipsam sunt itaque, esse magnam placeat vitae voluptas sequi<br> 
+            molestias beatae veritatis qui<br> 
+            aut illo incidunt ex repellat error iste.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+            Culpa expedita repudiandae dolore sunt quidem <br>
+            nostrum sint obcaecati vel illum,<br>
+            reprehenderit nisi doloremque quas a quasi quos in repellat, dolor voluptatem!<br>
+            </p>
+    
+            <button class="btn">Ask a Question</button>    <!--Replace about with any button you want-->
+            <!-- (Read more)Here we will redirect the user to the official website about us page -->
+    
+        <img src="http://3.bp.blogspot.com/-IL_EfygRH5E/TvN8hOZxZGI/AAAAAAAAAm8/fyZJaGkqCis/s1600/question+1.jpg" width="210px" height="250px" alt="Question Mark Image" class="picleft">
+        
+    </section>
+
+</body>
+</html>
